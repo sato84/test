@@ -1,0 +1,26 @@
+---
+- name: sample playbook
+  become: true
+  hosts: all
+  tasks:
+    - name: install unzip and vsftpd
+      yum:
+        name: ['unzip','vsftpd']
+        state: latest
+        update_cache: yes
+
+    - name: add test ansible_test
+      user:
+        name: ansible_test
+        shell: /bin/bash
+        groups: wheel
+        update_password: on_create
+        password: "{{ 'Zaq12wsx'|password_hash('sha512') }}"
+
+    - name: create directory /work
+      file:
+        path: /work
+        state: directory
+        owner: root
+        group: root
+        mode: 0777

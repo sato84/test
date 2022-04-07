@@ -1,0 +1,26 @@
+---
+vitual_host:
+  - { name: "admin_host", hostname: "*", port: "9060" }
+  - { name: "admin_host", hostname: "*", port: "9043" }
+  - { name: "default_host", hostname: "*", port: "9080" }
+  - { name: "default_host", hostname: "*", port: "80" }
+  - { name: "default_host", hostname: "*", port: "9443" }
+  - { name: "default_host", hostname: "*", port: "5060" }
+  - { name: "default_host", hostname: "*", port: "5061" }
+  - { name: "default_host", hostname: "*", port: "443" }
+  - { name: "default_host", hostname: "was9web1", port: "9080" }
+  - { name: "default_host", hostname: "was9web1", port: "80" }
+  - { name: "default_host", hostname: "was9web1", port: "9443" }
+  - { name: "default_host", hostname: "was9web1", port: "5060" }
+  - { name: "default_host", hostname: "was9web1", port: "5061" }
+  - { name: "default_host", hostname: "was9web1", port: "443" }
+  - { name: "default_host", hostname: "was9web2", port: "9080" }
+  - { name: "default_host", hostname: "was9web2", port: "80" }
+  - { name: "default_host", hostname: "was9web2", port: "9443" }
+  - { name: "default_host", hostname: "was9web2", port: "5060" }
+  - { name: "default_host", hostname: "was9web2", port: "5061" }
+  - { name: "default_host", hostname: "was9web2", port: "443" }
+  - { name: "proxy_host", hostname: "*", port: "80" }
+  - { name: "proxy_host", hostname: "*", port: "443" }
+  - { name: "test_host", hostname: "*", port: "80" }
+  - { name: "test_host", hostname: "*", port: "443" }
